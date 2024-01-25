@@ -28,3 +28,24 @@ def check_answer(answer, guess):
     else:
         print("WRONG!")
         return 0
+
+
+def display_score(correct_guesses, guesses):
+    print("-------------------")
+    print("Results!")
+    print("-------------------")
+
+    print("Answers: ", end="")
+    for i in questions:
+        print(questions.get(i), end=" ")
+
+    print()
+
+    print("Guesses: ", end=" ")
+    for i in guesses:
+        print(questions.get(i), end="")
+
+    print()
+
+    score = (correct_guesses / len(questions)) * 100
+    print("Your score is : " + str(score) + "%")
