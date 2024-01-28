@@ -88,3 +88,17 @@ while play_again():
     new_game()
 
 print("Bye! Don't forgot to smile ) cuz your smile is beautiful!")
+
+
+t_yil = int(input("Tug'ilgan yilingizni kiriting: "))
+yosh = 2023 - t_yil
+print("Siz " + str(yosh) + " yoshda ekansiz")
+
+
+son = int(input("Istalgan sonni kiriting\n>>>"))
+hisob = son**2
+print(str(hisob) + " " + "ga teng")  # not yet
+
+yosh = int(input("Yoshingiz nechchida?:\n>>>"))
+hisob = 2024 - yosh
+print("Siz" + " " + str(hisob) + " " + "yilda tug'ilgansiz")
