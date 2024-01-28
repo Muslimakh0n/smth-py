@@ -78,7 +78,8 @@ options = [
         "C. 1352 23-rajab",
         "D. 1444 4-sha'bon",
     ],
-]
+]  # so, here in optios you can put your own question and answers just simly to change them
+
 
 new_game()
 
