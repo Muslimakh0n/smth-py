@@ -135,3 +135,10 @@ narhlar[0] = int(narhlar[0] - narhlar[3])
 print("Elementlarning soni:", len(narhlar))
 print("Eng arzon narh ", eng_arzon, ".Eng qimmat narh", eng_qimmat, ".Jami:", jami)
 print(narhlar)
+
+
+friends = ["Yulduz", "Muslimakhon", "Muslimaaa", "Suhaila"]
+for friend in friends:
+    print(f"Qardrdon do'stim {friend},sizni 5-fevral kuni kinoga taklif qilaman!")
+    print(" Lovely Muslima")
+print("Kod 4 marta takrorlandi")
