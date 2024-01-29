@@ -102,3 +102,26 @@ print(str(hisob) + " " + "ga teng")  # not yet
 yosh = int(input("Yoshingiz nechchida?:\n>>>"))
 hisob = 2024 - yosh
 print("Siz" + " " + str(hisob) + " " + "yilda tug'ilgansiz")
+
+
+countries = [
+    "Uzbekistan",
+    "Saudia",
+    "Malaysia",
+    "US",
+    "Canada",
+    "Germany",
+    "Turkey",
+    "Moscow",
+    "Afghanistan",
+    "Pakistan",
+    "Switzerland",
+]
+print("Total number of countries: ", len(countries))
+print(sorted(countries))
+print(sorted(countries, reverse=True))
+print(countries.reverse())
+print(countries)
+countries.sort()
+print(countries)
+countries.sort(reverse=True)
