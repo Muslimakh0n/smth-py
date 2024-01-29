@@ -125,3 +125,13 @@ print(countries)
 countries.sort()
 print(countries)
 countries.sort(reverse=True)
+
+
+narhlar = [12000, 225000, 34000, 45000]
+eng_arzon = min(narhlar)
+eng_qimmat = max(narhlar)
+jami = sum(narhlar)
+narhlar[0] = int(narhlar[0] - narhlar[3])
+print("Elementlarning soni:", len(narhlar))
+print("Eng arzon narh ", eng_arzon, ".Eng qimmat narh", eng_qimmat, ".Jami:", jami)
+print(narhlar)
