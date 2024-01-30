@@ -142,3 +142,39 @@ for friend in friends:
     print(f"Qardrdon do'stim {friend},sizni 5-fevral kuni kinoga taklif qilaman!")
     print(" Lovely Muslima")
 print("Kod 4 marta takrorlandi")
+
+
+n_people = int(input("Bugun necha kishi bn suhbat qildingiz?>>>"))
+ismlar = []
+for n in range(n_people):
+    ismlar.append(input(f"{n+1}-suhbat qilgan odamingiz kim edi: "))
+print(ismlar)  # 2
+
+cars = ["toyota", "mazda", "hyundai", "gm", "kia"]
+for car in cars:
+    if car == "gm":
+        print(car.upper())
+    else:
+        print(car.title())
+
+        cars = ["toyota", "mazda", "hyundai", "gm", "kia"]
+for car in cars:
+    if car != "gm":
+        print(car.upper())
+    else:
+        print(car.title())  # finally
+
+# help
+
+
+ism = input("Ismingiz nima?\n>>>")
+if ism.lower() != "muslima":
+    print(f"Xush kelibsiz" + " " + str(ism.title))
+else:
+    print("Xush kelibsiz Admin, .Foydalanuvchilar ro'yxatini ko'rishni istaysizmi?")
+
+    login = input("Login kiriting: ")
+if login.lower() == "admin":
+    print("Xush kelibsiz Admin, foydalanuvchilar ro'yxatini ko'rasizmi?")
+else:
+    print(f"Xush kelibsiz {login.title()}!")
