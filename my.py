@@ -179,13 +179,23 @@ if login.lower() == "admin":
 else:
     print(f"Xush kelibsiz {login.title()}!")
 
-
- x = float(input("Birinchi sonni kiriting: "))
+    x = float(input("Birinchi sonni kiriting: "))
 y = float(input("Ikkinchi sonni kiriting:"))
-if x==y: print(f"Sonlar teng: {x}={y}")
+if x == y:
+    print(f"Sonlar teng: {x}={y}")
 
 son = float(input("Istalgan son kiriting:"))
-print("Son manfiy") if son<0 else print("Son musbat")
- 
-son = float(input('Istalgan son kiriting: '))
-print(son**(1/2)) if son>0 else print('Musbat son kiriting')
+print("Son manfiy") if son < 0 else print("Son musbat")
+
+son = float(input("Istalgan son kiriting: "))
+print(son ** (1 / 2)) if son > 0 else print("Musbat son kiriting")
+
+
+yosh = int(input("Yoshingiz nechida? "))
+if yosh <= 4 or yosh > 60:
+    price = "0"
+elif yosh > 18:
+    price = "10000"
+elif yosh < 18:
+    price = "20000"
+print(f"Sizga kirish {price} so'm")
