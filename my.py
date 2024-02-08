@@ -199,3 +199,16 @@ elif yosh > 18:
 elif yosh < 18:
     price = "20000"
 print(f"Sizga kirish {price} so'm")
+
+
+x = float(input("Istalgan sonni kiriting: "))
+y = float(input("Istalgan ikkinchi sonni kiriting: "))
+if x == y:
+    print(f"Sonlar teng")
+
+x = float(input("Istalgan sonni kiriting: "))
+y = float(input("Istalgan sonni kiriting: "))
+if x < 0:
+    print(f"This number is posotive")
+elif x > 0:
+    print(f"This number is negative")  # there is something frongggggg(sabrrrrr)
