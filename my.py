@@ -252,3 +252,25 @@ if tarjima == None:
     print("Bunday so'z mavjud emas")
 else:
     print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi")
+
+
+talaba_1 = {"ism": "Muslima Javokhirovna", "sinf": "12-sinf", "oqish_joyi": "noma'lum"}
+print(
+    f"{talaba_1['ism'].title()},\
+ {talaba_1['oqish_joyi']},\
+ {talaba_1['sinf']}"
+)
+
+talaba_1["yashash_joyi"] = "yer_sayyorasi"
+talaba_1["hobby"] = "kitob_o'qish"
+talaba_1["ism"] = "Fotima"
+print(talaba_1)
+
+talaba_2 = {}
+talaba_2["ism"] = "abdulloh"
+talaba_2["hobby"] = "robototexnika"
+talaba_2["yosh"] = "22"
+print(talaba_2)
+
+talaba_1["sinf"] = 11
+print(f"Talaba {talaba_1['ism']} endi {talaba_1['sinf']}-da")
