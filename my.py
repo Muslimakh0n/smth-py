@@ -245,3 +245,10 @@ python_izohli_lugati = {
 }
 kalit = input("Kalit so'z kiriting:").lower()
 print("python_izohli_lugati.get"(kalit, "Bunday so'z mavjud emas"))
+
+alit = input("Kalit so'z kiriting:").lower()
+tarjima = "python_izohli_lugati.get"(kalit)
+if tarjima == None:
+    print("Bunday so'z mavjud emas")
+else:
+    print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi")
