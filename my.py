@@ -274,3 +274,25 @@ print(talaba_2)
 
 talaba_1["sinf"] = 11
 print(f"Talaba {talaba_1['ism']} endi {talaba_1['sinf']}-da")
+
+
+menu = {
+    "osh": 40000,
+    "lag'mon": 22000,
+    "norin": 60000,
+    "somsa": 80000,
+    "tabaka": 45000,
+    "choy": 5000,
+    "non": 6000,
+    "assorti": 56000,
+}
+print("Uchta taom buyutma bering.")
+buyurtmalar = []
+for n in range(3):
+    buyurtmalar.append(input(f"{n+1}-taom:").lower())
+
+for buyurtma in buyurtmalar:
+    if buyurtma in menu:
+        print(f"{buyurtma.titlt()}{menu[buyurtma]}so'm")
+else:
+    print(f"Kechirasiz, bizda {buyurtma} yo'q")  # tugadiiiii
