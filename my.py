@@ -296,3 +296,68 @@ for buyurtma in buyurtmalar:
         print(f"{buyurtma.titlt()}{menu[buyurtma]}so'm")
 else:
     print(f"Kechirasiz, bizda {buyurtma} yo'q")  # tugadiiiii
+
+
+buxoriy = {
+    "ism": "Abu Abdulloh Muhammad ibn Ismoil",
+    "tyil": 810,
+    "vyil": 870,
+    "tjoy": "Buxoro",
+    "asarlar": [
+        "Al-jome' as-sahih",
+        "Al-adab al-mufrad",
+        "At-tarix al-kabir",
+        "At-tarix as-sag'ir",
+    ],
+}
+
+qodiriy = {
+    "ism": "Abdulla Qodiriy",
+    "tyil": 1894,
+    "vyil": 1938,
+    "tjoy": "Toshkent",
+    "asarlar": ["Baxtsiz kuyov", "Uloqda", "O'tgan kunlar", "Mehrobdan chayon"],
+}
+
+muhammadsodiq = {
+    "ism": "Shayx Muhammad Sodiq Muhammad Yusuf",
+    "tyil": 1952,
+    "vyil": 2015,
+    "tjoy": "Andijon",
+    "asarlar": [
+        "Sun'iy aqidalar",
+        "Ixtiloflar Sabablar va Uechimlar",
+        "Hadis va Hayot",
+        "Iymon",
+    ],
+}
+
+navoiy = {
+    "ism": "Alisher Navoiy",
+    "tyil": 1441,
+    "vyil": 1501,
+    "tjoy": "Xirot",
+    "asarlar": ["Xamsa", "Lison ut-Tayr", "Mahbub Al-Qulub", "Munojot"],
+}
+
+shaxslar = [buxoriy, qodiriy, muhammadsodiq, navoiy]
+
+
+for shaxs in shaxslar:
+    ism = shaxs["ism"]
+    asarlar = shaxs["asarlar"]
+    print(f"\n{ism} ning mashxur asarlari: ")
+    for asar in asarlar:
+        print(asar)
+
+
+kinolar = {
+    "ali": ["nmadur", "nmadur", "nmadur"],
+    "muslima": ["nmadur", "nmadur", "nmadur"],
+    "bobur": ["nmadur", "nmadur", "nmadur"],
+    "umar": ["nmadur", "nmadur", "nmadur"],  # i have no idea what to write
+}
+for ism, kinolar in kinolar.items():
+    print(f"\n{ism.title()}ning sevimli kinolari:")
+    for kino in kinolar:
+        print(kino)
